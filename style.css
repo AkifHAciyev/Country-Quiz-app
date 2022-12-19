@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-image: url('./images/background.png');
+	background-attachment: fixed;
+	background-size: cover;
+}
+h2,
+h3 {
+	font-weight: 700;
+	color: #617a9f;
+}
+header {
+	padding: 40px 35px 10px 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	gap: 15px;
+}
+section {
+	padding: 19px;
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+}
+img {
+	width: 40%;
+}
+button {
+	position: relative;
+	padding: 10px 25px;
+	border-radius: 15px;
+	border: 1px solid #c8cbee;
+	color: #3444f0;
+	height: auto;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin: 100px auto;
+	border-radius: 15px;
+	position: relative;
+	background-color: #fff;
+	width: 20rem;
+	height: 28rem;
+}
+
+.result-title {
+	font-size: 50px;
+}
+
+.score {
+	color: rgb(89, 197, 89);
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.result {
+	display: flex;
+	padding: 20px 40px;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	background-color: #fff;
+	width: 19rem;
+	height: 22rem;
+	margin: 100px auto;
+	border-radius: 15px;
+	position: relative;
+	font-size: 20px;
+	display: none;
+}
+
+.variant {
+	position: absolute;
+	left: 15px;
+}
+.hover {
+	cursor: pointer;
+}
+
+.hover:hover {
+	background-color: #f9a813;
+	color: #fff;
+}
+
+.green {
+	color: #fff;
+	background-color: #69c38f;
+}
+.red {
+	color: #fff;
+	background-color: #eb877f;
+}
+
+.green:focus {
+	background-color: #69c38f;
+	color: #fff;
+}
+.red:focus {
+	background-color: #eb877f;
+	color: #fff;
+}
+
+.container::after {
+	position: absolute;
+	display: inline-block;
+	background: url('./images/undraw_adventure_4hum.svg');
+	content: '';
+	width: 152px;
+	height: 120px;
+	top: -68px;
+	right: 0;
+}
+
+#try-again {
+	border: 1px solid #646feb;
+	color: #646feb;
+	cursor: pointer;
+}
+#try-again:hover {
+	border: 1px solid #0015ff;
+	color: #0015ff;
+}
+
+#rest {
+	background-color: transparent;
+	color: #99a0f7;
+	cursor: pointer;
+}
+
+#result-img {
+	width: 70%;
+}
